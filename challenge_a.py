@@ -8,7 +8,7 @@ from generator import generate_string
 def main():
     while True:
         file_size = get_file_size(filename='strings.txt')
-        if abs(file_size - 10) <= 10e-3:
+        if abs(file_size - 10) <= 10e-4:
             break
         str_types = ['alphabetical', 'int', 'real', 'alphanumeric']
         choice = random.choice(str_types)
