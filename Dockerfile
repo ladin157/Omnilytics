@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTANER Noi Nguyen "huunoidq@gmail.com"
+LABEL maintainer="huunoidq@gmail.com"
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
@@ -17,4 +17,4 @@ COPY . /app
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "challege_b.py" ]
+CMD [ "challenge_b.py" ]
